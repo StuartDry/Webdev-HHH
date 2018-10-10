@@ -4,16 +4,14 @@ class User {
 
     }
 
-    public function register($name = '', $email = '', $password = ''){
+    public function register($email = '', $password = ''){
         // Password hash
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
         $db = Database::getInstance();
         $conn = $db->getConnection();
         $sql = 'INSERT INTO user (email, password) VALUES (
-    "'.$conn->real_escape_string($name).'",
     "'.$conn->real_escape_string($email).'",
-    "'.$hashed_password.'", NOW()
-    )';
+    "'.$hashed_password.'")';
         if ($conn->query ($sql))
             return $conn ->insert_id;
         return false;

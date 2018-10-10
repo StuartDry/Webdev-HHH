@@ -1,5 +1,7 @@
 <?php
 include_once 'includes/header.php';
+include 'Classes/User.php';
+include 'Classes/Database.php';
 if (isset($_POST['submit'])){
     $name = trim($_REQUEST['username']);
     $pass1 = trim($_REQUEST['pass1']);
@@ -16,7 +18,6 @@ if (isset($_POST['submit'])){
 ?>
 
 <div class="container LM">
-
     <div class="row justify-content-sm-center align-middle">
         <div class="col-xs">
             <form method="POST" action="">
