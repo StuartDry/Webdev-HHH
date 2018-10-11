@@ -1,7 +1,4 @@
 <?php
-include 'includes/header.php';
-include 'Classes/User.php';
-include 'Classes/Database.php';
 if (isset($_POST['submit'])){
 //    $name = trim($_REQUEST['username']);
     $email = trim($_REQUEST['email']);

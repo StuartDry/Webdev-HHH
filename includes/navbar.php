@@ -27,9 +27,8 @@
         </ul> <?php }
     else { ?>
         <!--naam uit de sessie veranderen naar voor- en achternaam!-->
-        <p style="color:white;" class="nav-item">You are logged in as: <?= $_SESSION['user']['username'];?></p>
-        <form action="" method="post">
-            <li class="nav-item"><button class="btn btn-outline-secondary" type="submit" name="submit">Logout</button></li>
-        </form>
+        <p style="color:white;" class="nav-item">Welcome <?= $_SESSION['user']['first_name'] . "!";?></p>
+        <a class="nav-item btn btn-outline-secondary" type="submit" name="submit" href="logout.php">Logout</a>
+
     <?php } ?>
 </nav>
