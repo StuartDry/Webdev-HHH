@@ -12,6 +12,6 @@ a[href="account"]{
     border: solid black 1px;
 }
 
-.nav-item{
+.nav-item.account{
     width: 25%;
 }

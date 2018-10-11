@@ -3,16 +3,16 @@
     <br>
     <!-- Nav tabs -->
     <ul class="nav nav-tabs">
-        <li class="nav-item">
+        <li class="nav-item account">
             <a class="nav-link active" data-toggle="tab" href="#home">My personal info</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item account">
             <a class="nav-link" data-toggle="tab" href="#menu1">My bookings</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item account">
             <a class="nav-link" data-toggle="tab" href="#menu2">Change password</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item account">
             <a class="nav-link" data-toggle="tab" href="#menu3">Delete account</a>
         </li>
     </ul>
