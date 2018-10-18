@@ -55,15 +55,15 @@ if (isset($_POST['submit'])){
             <!--<label for="email" style="font-size: 26px;">Email</label>-->
             <input type="text" id="login" class="fadeIn second" name="first_name" placeholder="Enter First Name">
             <!--<label for="password" style="font-size: 26px;">Password</label>-->
-            <input type="text" id="password" class="fadeIn third" name="prefix" placeholder="Enter Prefix">
+            <input type="text" class="fadeIn third" name="prefix" placeholder="Enter Prefix">
             <!--<label for="password" style="font-size: 26px;">Password</label>-->
-            <input type="text" id="password" class="fadeIn third" name="last_name" placeholder="Enter Last Name">
+            <input type="text" class="fadeIn third" name="last_name" placeholder="Enter Last Name">
             <!--<label for="password" style="font-size: 26px;">Password</label>-->
-            <input type="text" id="password" class="fadeIn third" name="email" placeholder="Enter E-mail">
+            <input type="password" class="fadeIn third" name="email" placeholder="Enter E-mail">
             <!--<label for="password" style="font-size: 26px;">Password</label>-->
-            <input type="text" id="password" class="fadeIn third" name="pass1" placeholder="Enter Password">
+            <input type="password" class="fadeIn third" name="pass1" placeholder="Enter Password">
             <!--<label for="password" style="font-size: 26px;">Password</label>-->
-            <input type="text" id="password" class="fadeIn third" name="pass2" placeholder="Repeat Password">
+            <input type="text" class="fadeIn third" name="pass2" placeholder="Repeat Password">
             <button type="submit" name="submit" class="btn btn-primary">Submit</button>
         </form>
 
