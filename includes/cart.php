@@ -7,7 +7,7 @@ if(!isset($_SESSION['cart'])) {
 
 $array=$_SESSION['cart'];
 
+////print_r($array);
+//echo "<pre>";
 //print_r($array);
-echo "<pre>";
-print_r($array);
-echo "</pre>";
+//echo "</pre>";

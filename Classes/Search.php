@@ -47,6 +47,7 @@ class Search
                                                 <li class="list-inline-item text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></li> '. $row['edition'] .'
                                             </ul>
                                         </div>
+                                        <p>&euro;'. $row['price'] .'</p>
                                         <div class="list-location">
                                             <a href="#"><i class="fa fa-map-marker"></i><small> '. $row['location'] .'</small> </a>
                                         </div>
