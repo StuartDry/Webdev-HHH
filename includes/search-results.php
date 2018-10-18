@@ -1,4 +1,25 @@
 <!-- link voor icons -->
+<?php
+if(!isset($_SESSION['cart'])) {
+    $array = array();
+    $_SESSION['cart'] = $array;
+}
+if(isset($_POST['submit'])){
+    $array=$_SESSION['cart'];
+    $check_in=$_POST['check-in_date'];
+    $check_out=$_POST['check-out_date'];
+    $homeID=$_POST['homeID'];
+//TODO zorgen dat er maar 1 huisje per keer geboekt kan worden?
+    if($check_in!=null && $check_out!=null && $homeID!=null) {
+        $productarray = array($homeID, $check_in, $check_out);
+        array_push($array, $productarray);
+        $_SESSION['cart'] = $array;
+    }else echo '<p class="btn btn-danger">Something went wrong, please refresh the page and try again.</p>';
+    echo "<pre>";
+    print_r($_SESSION['cart']);
+    echo "</pre>";
+}
+?>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 <div class="mt-5"></div>

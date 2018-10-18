@@ -16,8 +16,11 @@ class User {
     "'.$conn->real_escape_string($phonenumber).'", 
     "'.$newsletter.'",
     "'.$hashed_password.'")';
-        if ($conn->query ($sql))
-            return $conn ->insert_id;
+        if ($conn->query ($sql)) {
+            $_SESSION['email']=$email;
+            return $conn->insert_id;
+        }
+
         return false;
     }
 

@@ -14,12 +14,8 @@ class Search
     }
 
     public function getResults(){
-        if(!isset($_SESSION['cart'])) {
-            $array = array();
-            $_SESSION['cart'] = $array;
-        }
-        $ret = '';
 
+        $ret = '';
 
         $db = Database::getInstance();
         $conn = $db->getConnection();
@@ -28,7 +24,7 @@ class Search
         $result=$conn->query($sql);
 
         while( $row = mysqli_fetch_array($result) ) {
-            $homeID=$row['homeID'];
+//            $homeID=$row['homeID'];
 
             //maak de html van het zoekresultaat
             $ret.= '
@@ -64,6 +60,7 @@ class Search
                                                 <input type="date" name="check-out_date">
                                             </label>
                                             <b><p>Max. number of guests: '. $row['capacity'] .'</p></b>
+                                            <input type="hidden" value="'. $row['homeID'] .'" name="homeID">
                                             <input type="submit" name="submit" class="btn btn-outline-primary" value="Book now">
                                         </form>
                                     </div>
@@ -75,18 +72,7 @@ class Search
             
             ';
 
-            if(isset($_POST['submit'])){
-                $check_in=$_POST['check-in_date'];
-                $check_out=$_POST['check-out_date'];
 
-                $array=$_SESSION['cart'];
-                $productarray=array($homeID, $check_in, $check_out);
-                array_push($array, $productarray);
-                $_SESSION['cart']=$array;
-                echo "<pre>";
-                print_r($_SESSION['cart']);
-                echo "</pre>";
-            }
         }
 
         return $ret;

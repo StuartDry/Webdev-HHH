@@ -15,10 +15,10 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="./search">Search</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">How it works</a>
+                    <a class="nav-link" href="./cart">Cart</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Reference</a>

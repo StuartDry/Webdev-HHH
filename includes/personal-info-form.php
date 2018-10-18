@@ -12,13 +12,10 @@
 
         <!-- Login Form -->
         <form method="POST" action="">
-            <!--<label for="email" style="font-size: 16px;">Name</label>-->
             <input type="text" class="fadeIn second Fname" name="first_name" placeholder="First Name">
             <input type="text" class="fadeIn second Pfix" name="prefix" placeholder="Prefix">
             <input type="text" class="fadeIn second" name="last_name" placeholder="Last Name">
-            <!--<label for="password" style="font-size: 16px;">Email</label>-->
             <input type="text" class="fadeIn second" name="email" placeholder="Enter E-mail">
-            <!--<label for="password" style="font-size: 16px;">Phonenumber</label>-->
             <select name="phone1" class="fadeIn third">
                 <option>0031</option>
                 <option>0000</option>
