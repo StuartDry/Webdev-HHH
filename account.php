@@ -21,19 +21,88 @@
     <div class="tab-content">
         <div id="home" class="container tab-pane active"><br>
             <h3>My personal info</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <form action="" method="post">
+                <div>
+                    <label>Name
+                        <input type="text" name="first_name" placeholder="First name">
+                        <input type="text" name="prefix" placeholder="Prefix">
+                        <input type="text" name="last_name" placeholder="Surname">
+                    </label>
+                    <label>E-mail
+                        <input type="email" name="email" placeholder="E-mail address">
+                    </label>
+                    <label>Phonenumber
+                        <select name="phone1">
+                            <option>0031</option>
+                            <option>0000</option>
+                            <option>1111</option>
+                        </select>
+                        <input type="tel" name="phone2" placeholder="Phone number">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Newsletter
+                    </label>
+                </div>
+                <input type="button" class="btn btn-danger account-btns" name="quit" value="Cancel">
+                <input type="submit" class="btn btn-success account-btns" name="change_info" value="Save">
+            </form>
         </div>
         <div id="menu1" class="container tab-pane fade"><br>
             <h3>My bookings</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="booking col-xs-12 col-sm-4">
+                <div class="booking-img">
+                    <img src="" alt="home">
+                </div>
+                <p>Naam huisje, naam park</p>
+                <p>... personen</p>
+                <p>Prijs</p>
+                <p>Check-in: 01-01-2001</p>
+                <p>Check-out: 02-01-2001</p>
+            </div>
+            <div class="booking col-xs-12">
+                <div class="booking-img">
+                    <img src="" alt="home">
+                </div>
+                <p>Naam huisje, naam park</p>
+                <p>... personen</p>
+                <p>Prijs</p>
+                <p>Check-in: 01-01-2001</p>
+                <p>Check-out: 02-01-2001</p>
+            </div>
+            <div class="booking col-xs-12 col-sm-4">
+                <div class="booking-img">
+                    <img src="" alt="home">
+                </div>
+                <p>Naam huisje, naam park</p>
+                <p>... personen</p>
+                <p>Prijs</p>
+                <p>Check-in: 01-01-2001</p>
+                <p>Check-out: 02-01-2001</p>
+            </div>
         </div>
         <div id="menu2" class="container tab-pane fade"><br>
             <h3>Change password</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            <form action="" method="post">
+                <div>
+                    <input type="password" name="old_pw" placeholder="Current password">
+                    <input type="password" name="pass1" placeholder="New password">
+                    <input type="password" name="pass2" placeholder="Repeat new password">
+                </div>
+                <input type="button" class="btn btn-danger account-btns" name="quit" value="Cancel">
+                <input type="submit" class="btn btn-success account-btns" name="change_pw" value="Save">
+            </form>
         </div>
         <div id="menu3" class="container tab-pane fade"><br>
             <h3>Delete account</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            <form action="" method="post">
+                <div>
+                    <input type="email" name="delete_account_email" placeholder="Enter e-mailaddress">
+                    <input type="password" name="delete_account_pw" placeholder="Enter password">
+                </div>
+                <input type="button" class="btn btn-danger account-btns" name="quit" value="Cancel">
+                <input type="submit" class="btn btn-success account-btns" name="delete_account" value="Save">
+            </form>
         </div>
     </div>
 </div>
