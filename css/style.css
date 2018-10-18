@@ -29,4 +29,8 @@ img {width:100%;}
 .nav-link{
     color:#FFF;
 }
+
+.navbar-toggler{
+    background-color:#000;
+}
 /*einde homepage css*/

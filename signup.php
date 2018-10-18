@@ -1,3 +1,18 @@
+<div class="mt-5"></div>
+<section class="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb m-0 p-0 pt-2">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Fruit</a></li>
+                    <li class="breadcrumb-item active">Pears</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 if (isset($_POST['submit'])){
 //    $name = trim($_REQUEST['username']);
@@ -25,36 +40,37 @@ if (isset($_POST['submit'])){
 }
 ?>
 
-<div class="container LM">
+<link rel="stylesheet" href="css/login.css">
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
 
-    <div class="row justify-content-sm-center">
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="./images/icons/icon.svg" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
         <form method="POST" action="">
-            <div class="form-group">
-                <label for="first_name" style="font-size: 26px;">First Name</label>
-                <input type="text" class="form-control form-control-lg" name="first_name" placeholder="Enter First Name">
-            </div>
-            <div class="form-group">
-                <label for="prefix" style="font-size: 26px;">Prefix</label>
-                <input type="text" class="form-control form-control-lg" name="prefix" placeholder="Enter Prefix">
-            </div>
-            <div class="form-group">
-                <label for="last_name" style="font-size: 26px;">Last Name</label>
-                <input type="text" class="form-control form-control-lg" name="last_name" placeholder="Enter Last Name">
-            </div>
-            <div class="form-group">
-                <label for="email" style="font-size: 26px;">E-mail address</label>
-                <input type="email" class="form-control form-control-lg" name="email" placeholder="Enter E-mail">
-            </div>
-            <div class="form-group">
-                <label for="pass1" style="font-size: 26px;">Password</label>
-                <input type="password" class="form-control form-control-lg" name="pass1" placeholder="Repeat Password">
-            </div>
-            <div class="form-group">
-                <label for="pass2" style="font-size: 26px;">Repeat Password</label>
-                <input type="password" class="form-control form-control-lg" name="pass2" placeholder="Enter Password">
-            </div>
+            <!--<label for="email" style="font-size: 26px;">Email</label>-->
+            <input type="text" id="login" class="fadeIn second" name="first_name" placeholder="Enter First Name">
+            <!--<label for="password" style="font-size: 26px;">Password</label>-->
+            <input type="text" id="password" class="fadeIn third" name="prefix" placeholder="Enter Prefix">
+            <!--<label for="password" style="font-size: 26px;">Password</label>-->
+            <input type="text" id="password" class="fadeIn third" name="last_name" placeholder="Enter Last Name">
+            <!--<label for="password" style="font-size: 26px;">Password</label>-->
+            <input type="text" id="password" class="fadeIn third" name="email" placeholder="Enter E-mail">
+            <!--<label for="password" style="font-size: 26px;">Password</label>-->
+            <input type="text" id="password" class="fadeIn third" name="pass1" placeholder="Enter Password">
+            <!--<label for="password" style="font-size: 26px;">Password</label>-->
+            <input type="text" id="password" class="fadeIn third" name="pass2" placeholder="Repeat Password">
             <button type="submit" name="submit" class="btn btn-primary">Submit</button>
         </form>
-    </div>
 
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+
+    </div>
 </div>

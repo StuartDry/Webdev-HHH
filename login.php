@@ -14,23 +14,30 @@ if (isset($_POST['submit'])){
 }
 ?>
 
-<div class="container LM">
-    <div class="row justify-content-sm-center align-middle">
-        <div class="col-xs">
-            <form method="POST" action="">
-                <div class="form-group">
-                    <label for="email" style="font-size: 26px;">Email</label>
-                    <input type="text" class="form-control form-control-lg" name="email" placeholder="Enter E-mail">
-                </div>
-                <div class="form-group">
-                    <label for="password" style="font-size: 26px;">Password</label>
-                    <input type="password" class="form-control form-control-lg" name="pass" placeholder="Enter Password">
-                </div>
-                <div class="form-group text-center">
-                    <button type="submit" name="submit" class="btn btn-primary btn-lg">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>
+<link rel="stylesheet" href="css/login.css">
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
 
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="./images/icons/icon.svg" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form method="POST" action="">
+            <label for="email" style="font-size: 26px;">Email</label>
+            <input type="text" id="login" class="fadeIn second" name="email" placeholder="login">
+            <label for="password" style="font-size: 26px;">Password</label>
+            <input type="text" id="password" class="fadeIn third" name="pass" placeholder="password">
+            <!--<input type="submit" class="fadeIn fourth" value="Log In">-->
+            <button type="submit" name="submit" class="btn btn-primary">Login</button>
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+
+    </div>
 </div>

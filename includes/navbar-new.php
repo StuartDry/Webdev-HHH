@@ -47,6 +47,25 @@
                 </form>
 
             </ul>
+            <?php
+            if(!isset($_SESSION['user'])){
+                ?>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup">Signup</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a style='color:inherit;' href="login" ><button class="btn btn-outline-secondary">Login<span class="sr-only">(current)</span></button></a>
+                        <!--            wat is (current)?-->
+                    </li>
+
+                </ul> <?php }
+            else { ?>
+                <!--naam uit de sessie veranderen naar voor- en achternaam!-->
+                <p class="nav-item"><a href="account">Welcome <?= $_SESSION['user']['first_name'] . "!";?></a></p>
+                <a class="nav-item btn btn-outline-secondary" type="submit" name="submit" href="logout.php">Logout</a>
+
+            <?php } ?>
         </div>
     </div>
 </nav>
