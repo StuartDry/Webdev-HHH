@@ -29,8 +29,10 @@ class Order
         if($conn->query($sql)){
             echo "Boeken gelukt.";
             return $conn->insert_id;
-        }else{var_dump($sql);}
-        echo("Error description: " . mysqli_error($conn));
+        }else{
+            var_dump($sql);
+            echo("Error description: " . mysqli_error($conn));
+        }
         return false;
     }
 }

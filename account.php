@@ -1,3 +1,22 @@
+<?php
+if(isset($_POST['change_info'])){
+    $first_name=$_POST['first_name'];
+    $prefix=$_POST['prefix'];
+    $last_name=$_POST['last_name'];
+    $email=$_POST['email'];
+    $phone1=$_POST['phone1'];
+    $phone2=$_POST['phone2'];
+    $phonenumber=$phone1.$phone2;
+    $newsletter=$_POST['newsletter'];
+
+    $user=new User();
+    $result=$user->editUser($first_name, $prefix, $last_name, $email, $phonenumber, $newsletter);
+    if(!$result){
+        echo "Edit failed.";
+    }
+}
+?>
+
 <div class="container mt-3">
     <h2>Toggleable Tabs</h2>
     <br>

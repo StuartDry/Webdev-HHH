@@ -43,6 +43,24 @@ class User {
         return false;
 
     }
+
+    public function editUser($first_name, $prefix, $last_name, $email, $phonenumber, $newsletter){
+        $db = Database::getInstance();
+        $conn = $db->getConnection();
+        $userID=$_SESSION['userID'];
+
+        $sql = 'UPDATE user SET first_name="'.$conn->real_escape_string($first_name).'", 
+        prefix="'.$conn->real_escape_string($prefix).'", 
+        last_name="'.$conn->real_escape_string($last_name).'", 
+        email="'.$conn->real_escape_string($email).'", 
+        phonenumber="'.$conn->real_escape_string($phonenumber).'", 
+        newsletter="'.$conn->real_escape_string($email).'" WHERE userID="'.$conn->real_escape_string($userID).'"';
+
+        if ($conn->query ($sql)) {
+            echo("Error description: " . mysqli_error($conn));
+        }
+    }
+
     public function logout(){
         unset( $_SESSION['user']);
         return true;
