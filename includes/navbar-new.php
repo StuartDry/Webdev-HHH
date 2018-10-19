@@ -21,18 +21,7 @@
                     <a class="nav-link" href="./cart">Cart</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        More
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/Search">Search</a>
-                        <a class="dropdown-item" href="/Cart">Cart </a>
-                        <a class="dropdown-item" href="/Account">account </a>
-
-                    </div>
-                </li>
-
+ 
 
 
                 <form class="form-inline" action="#">
