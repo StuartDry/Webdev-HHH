@@ -1,5 +1,6 @@
 <?php
 if(isset($_POST['change_info'])){
+    $userID=$_SESSION['user']['userID'];
     $first_name=$_POST['first_name'];
     $prefix=$_POST['prefix'];
     $last_name=$_POST['last_name'];
@@ -9,10 +10,14 @@ if(isset($_POST['change_info'])){
     $phonenumber=$phone1.$phone2;
     $newsletter=$_POST['newsletter'];
 
-    $user=new User();
-    $result=$user->editUser($first_name, $prefix, $last_name, $email, $phonenumber, $newsletter);
-    if(!$result){
-        echo "Edit failed.";
+    if($email!="") {
+        $user = new User();
+        $result = $user->editUser($userID, $first_name, $prefix, $last_name, $email, $phonenumber, $newsletter);
+//        if (!$result) {
+//            echo "Edit failed.";
+//        }
+    }else{
+        echo "E-mailaddress must be specified.";
     }
 }
 ?>
@@ -59,7 +64,8 @@ if(isset($_POST['change_info'])){
                         <input type="tel" name="phone2" placeholder="Phone number">
                     </label>
                     <label>
-                        <input type="checkbox" name="newsletter">
+                        <input type="hidden" value="0" name="newsletter">
+                        <input type="checkbox" value="1" name="newsletter">
                         Newsletter
                     </label>
                 </div>

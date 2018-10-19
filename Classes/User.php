@@ -44,21 +44,23 @@ class User {
 
     }
 
-    public function editUser($first_name, $prefix, $last_name, $email, $phonenumber, $newsletter){
+    //TODO na wijzigen gegevens moet de sessie nog vernieuwd worden, anders oude info in de sessie
+    public function editUser($userID, $first_name, $prefix, $last_name, $email, $phonenumber, $newsletter){
         $db = Database::getInstance();
         $conn = $db->getConnection();
-        $userID=$_SESSION['userID'];
 
         $sql = 'UPDATE user SET first_name="'.$conn->real_escape_string($first_name).'", 
         prefix="'.$conn->real_escape_string($prefix).'", 
         last_name="'.$conn->real_escape_string($last_name).'", 
         email="'.$conn->real_escape_string($email).'", 
         phonenumber="'.$conn->real_escape_string($phonenumber).'", 
-        newsletter="'.$conn->real_escape_string($email).'" WHERE userID="'.$conn->real_escape_string($userID).'"';
+        newsletter="'.$conn->real_escape_string($newsletter).'" WHERE userID="'.$conn->real_escape_string($userID).'"';
 
-        if ($conn->query ($sql)) {
+        if (!$conn->query ($sql)) {
             echo("Error description: " . mysqli_error($conn));
         }
+
+        return false;
     }
 
     public function logout(){
