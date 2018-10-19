@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="./">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./search">Search</a>
@@ -20,22 +20,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./cart">Cart</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Reference</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Employer</a>
-                </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                         More
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Company</a>
-                        <a class="dropdown-item" href="#">Latest </a>
-                        <a class="dropdown-item" href="#">Popular </a>
-                        <a class="dropdown-item" href="#">Upcoming </a>
-                        <a class="dropdown-item" href="#">Offers </a>
+                        <a class="dropdown-item" href="/Search">Search</a>
+                        <a class="dropdown-item" href="/Cart">Cart </a>
+                        <a class="dropdown-item" href="/Account">account </a>
+
                     </div>
                 </li>
 

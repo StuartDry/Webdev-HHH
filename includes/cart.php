@@ -25,6 +25,7 @@ if(!isset($_SESSION['user']) && !isset($_SESSION['email'])){
 //    echo "</pre>";
     ?>
     <div class="container cart_container">
+        <?php //TODO tekst blabla stpom project? ?>
         <p>Home: <?php echo $array[0][0] ?></p>
         <p>Check-in date: <?php echo $array[0][1] ?></p>
         <p>Check-out date: <?php echo $array[0][2] ?></p>

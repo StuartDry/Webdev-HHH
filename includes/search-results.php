@@ -21,16 +21,15 @@ if(isset($_POST['submit'])){
 }
 ?>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-
+<?php //https://bootsnipp.com/snippets/O50pZ ?>
 <div class="mt-5"></div>
 <section class="breadcrumb">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <ul class="breadcrumb m-0 p-0 pt-2">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Fruit</a></li>
-                    <li class="breadcrumb-item active">Pears</li>
+                    <li class="breadcrumb-item"><a href="./">Home</a></li>
+
                 </ul>
             </div>
         </div>
@@ -54,169 +53,30 @@ if(isset($_POST['submit'])){
                                         <form>
                                             <div class="form-group">
                                                 <select class="form-control" id="conditionsselect1">
-                                                    <option>Conditions</option>
-                                                    <option>New</option>
-                                                    <option>Used</option>
+                                                    <option>Nederland</option>
+                                                    <option>Belgie</option>
+                                                    <option>Japan</option>
+                                                    <option>Rusland</option>
+                                                    <option>Antartica</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <select class="form-control" id="conditionsselect2">
                                                     <option>Body</option>
                                                     <option>Compact</option>
-                                                    <option>Convertible</option>
-                                                    <option>Coupe</option>
-                                                    <option>Off-road</option>
-                                                    <option>Sedan</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <select class="form-control" id="make1">
-                                                    <option>Make</option>
-                                                    <option>Ford</option>
-                                                    <option>Hyundai</option>
-                                                    <option>Kia</option>
-                                                    <option>Honda</option>
-                                                    <option>Skoda</option>
+                                                    <option>4 gast</option>
+                                                    <option>6 gasten</option>
+                                                    <option>12 gasten</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <select class="form-control" id="make1">
-                                                    <option>Model</option>
-                                                    <option>Accord</option>
-                                                    <option>Camry</option>
-                                                    <option>Civic</option>
-                                                    <option>Rapid</option>
-                                                    <option>Octavia</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control" id="mileage1">
-                                                    <option>Max Mileage</option>
-                                                    <option>< 5000</option>
-                                                    <option>5000-10000</option>
-                                                    <option>10000-15000</option>
-                                                    <option>15000-20000</option>
-                                                    <option>20000-25000</option>
-                                                    <option>> 25000</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control" id="year1">
-                                                    <option>Year</option>
-                                                    <option>2000</option>
-                                                    <option>2001</option>
-                                                    <option>2002</option>
-                                                    <option>2003</option>
-                                                    <option>2004</option>
-                                                    <option>2005</option>
-                                                    <option>2006</option>
-                                                    <option>2007</option>
-                                                    <option>2008</option>
-                                                    <option>2009</option>
-                                                    <option>2010</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control" id="make1">
-                                                    <option>Transmission</option>
-                                                    <option>Automatic</option>
-                                                    <option>Manaul</option>
-                                                    <option>Semi-Automatic</option>
-                                                </select>
-                                            </div>
-                                            <hr>
-                                            <button type="btn" class="btn btn-primary">Find Now</button>
-                                            <button type="btn" class="btn btn-primary">Reset All</button>
-                                            <div class="pb-3"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-md-12">
-                        <div class="card bg-primary text-white">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h3>Search</h3>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <form>
-                                            <div class="form-group">
-                                                <select class="form-control" id="conditionsselect1">
-                                                    <option>Conditions</option>
-                                                    <option>New</option>
-                                                    <option>Used</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control" id="conditionsselect2">
-                                                    <option>Body</option>
-                                                    <option>Compact</option>
-                                                    <option>Convertible</option>
-                                                    <option>Coupe</option>
-                                                    <option>Off-road</option>
-                                                    <option>Sedan</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control" id="make1">
-                                                    <option>Make</option>
-                                                    <option>Ford</option>
-                                                    <option>Hyundai</option>
-                                                    <option>Kia</option>
-                                                    <option>Honda</option>
-                                                    <option>Skoda</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control" id="make1">
-                                                    <option>Model</option>
-                                                    <option>Accord</option>
-                                                    <option>Camry</option>
-                                                    <option>Civic</option>
-                                                    <option>Rapid</option>
-                                                    <option>Octavia</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control" id="mileage1">
-                                                    <option>Max Mileage</option>
-                                                    <option>< 5000</option>
-                                                    <option>5000-10000</option>
-                                                    <option>10000-15000</option>
-                                                    <option>15000-20000</option>
-                                                    <option>20000-25000</option>
-                                                    <option>> 25000</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control" id="year1">
-                                                    <option>Year</option>
-                                                    <option>2000</option>
-                                                    <option>2001</option>
-                                                    <option>2002</option>
-                                                    <option>2003</option>
-                                                    <option>2004</option>
-                                                    <option>2005</option>
-                                                    <option>2006</option>
-                                                    <option>2007</option>
-                                                    <option>2008</option>
-                                                    <option>2009</option>
-                                                    <option>2010</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <select class="form-control" id="make1">
-                                                    <option>Transmission</option>
-                                                    <option>Automatic</option>
-                                                    <option>Manaul</option>
-                                                    <option>Semi-Automatic</option>
+                                                    <option>Silver</option>
+                                                    <option>Gold</option>
                                                 </select>
                                             </div>
                                             <hr>
@@ -234,8 +94,8 @@ if(isset($_POST['submit'])){
             <div class="col-md-9">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2> Reno: 42 properties found </h2>
-                        <p> 3 Reasons to Visit: gambling, entertainment & relaxation </p>
+                        <h2>  X properties found in locationY </h2>
+                        <p> 3 Reasons to Visit: Beachsports, entertainment & relaxation </p>
                     </div>
                 </div>
                 <div class="row">
@@ -270,7 +130,7 @@ if(isset($_POST['submit'])){
 
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <small> 42 properties found in Reno.  </small>
+                        <small> X properties found in LocationY.  </small>
                     </div>
                 </div>
                 <div class="row">
