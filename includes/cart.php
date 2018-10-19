@@ -33,6 +33,8 @@ if(!isset($_SESSION['user']) && !isset($_SESSION['email'])){
         <p>Full name: <?php echo $_SESSION['user']['first_name']." ".$_SESSION['user']['prefix']." ".$_SESSION['user']['last_name'] ?></p>
         <p>E-mail: <?php echo $_SESSION['user']['email'] ?></p>
         <p>Phonenumber: <?php $_SESSION['user']['phonenumber'] ?></p>
+        <?php //TODO link naar account niet zichtbaar-->andere kleur! ?>
+        <p>To edit ..., please visit your <a href="account">account</a></p>
         <a href="checkout" class="btn btn-success cart_button">Proceed</a>
     </div>
     <?php
